@@ -1,1 +1,2 @@
-allow priv_app vendor_default_prop:file { getattr  map  open };
+allow priv_app zygote:unix_stream_socket { getopt };
+allow priv_app mnt_sdcard_file:lnk_file { read };
